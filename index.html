@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Match</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Home Screen -->
+        <div id="home-screen" class="screen">
+            <h1>Memory Match</h1>
+            <div class="game-options">
+                <select id="difficulty">
+                    <option value="beginner">Beginner (4x4)</option>
+                    <option value="intermediate">Intermediate (6x6)</option>
+                    <option value="hard">Hard (8x8)</option>
+                </select>
+            </div>
+            <button id="start-btn" class="btn">Start Game</button>
+            <div class="credit">
+                <p>Developed by Zohaib Ashfaq</p>
+            </div>
+        </div>
+        <!-- Game Screen -->
+        <div id="game-screen" class="screen hidden">
+            <h2>Memory Match</h2>
+            <div class="game-layout">
+                <div class="game-board"></div>
+                <div class="rules-card">
+                    <h3>How to Play</h3>
+                    <ul>
+                        <li>Click on any card to reveal its symbol</li>
+                        <li>Click on another card to find its match</li>
+                        <li>If the cards match, they stay flipped</li>
+                        <li>If they don't match, they flip back</li>
+                        <li>Match all pairs to win the game!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="game-info">
+                <p>Moves: <span id="moves">0</span></p>
+                <p id="time-display">Time: <span id="time">0:00</span></p>
+            </div>
+            <div class="game-controls">
+                <button id="timer-toggle" class="btn">Timer: ON</button>
+                <button id="restart-btn" class="btn">Restart Game</button>
+                <button id="back-to-home" class="btn">Back to Home</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
