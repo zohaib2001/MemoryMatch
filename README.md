@@ -19,8 +19,7 @@ Memory Match is a fun and engaging card matching game that challenges your memor
 6. Match all pairs to win the game!
 
 ## Running the Game
-Click here to play the game directly: https://zohaib2001.github.io/MemoryMatch/
-
+[Click here](https://zohaib2001.github.io/MemoryMatch/) to play the game directly.
 Alternatively
 1. Clone the repository:
     ```bash
